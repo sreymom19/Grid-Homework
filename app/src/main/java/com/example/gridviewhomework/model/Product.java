@@ -9,29 +9,12 @@ public class Product {
 
     }
 
-    public Product(int pImage, String productTitle, String productDescription, Float productPrice) {
-        productImage = pImage;
+    public Product(int productImage, String productTitle, String productDescription, Float productPrice) {
+        this.productImage = productImage;
         this.productTitle = productTitle;
         this.productDescription = productDescription;
         this.productPrice = productPrice;
     }
-
-    /**
-     * access modifier
-     * 1 private
-     * 2 protected
-     * 3 public
-     *
-     * return type
-     * return primitive or object
-     * primitive -> int, String, long, float, Double, Boolean
-     * object -> Product
-     *
-     * @getProductTitle => function name
-     *
-     *
-     * @return
-     */
 
     public int getProductImage() {
         return productImage;
