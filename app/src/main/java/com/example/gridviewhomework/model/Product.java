@@ -2,17 +2,14 @@ package com.example.gridviewhomework.model;
 
 public class Product {
     private int productImage;
-    private String productTitle, productDescription;
+    private String productTitle;
     private Float productPrice;
 
-    public Product() {
+    public Product() {}
 
-    }
-
-    public Product(int productImage, String productTitle, String productDescription, Float productPrice) {
+    public Product(int productImage, String productTitle, Float productPrice) {
         this.productImage = productImage;
         this.productTitle = productTitle;
-        this.productDescription = productDescription;
         this.productPrice = productPrice;
     }
 
@@ -30,14 +27,6 @@ public class Product {
 
     public void setProductTitle(String productTitle) {
         this.productTitle = productTitle;
-    }
-
-    public String getProductDescription() {
-        return productDescription;
-    }
-
-    public void setProductDescription(String productDescription) {
-        this.productDescription = productDescription;
     }
 
     public Float getProductPrice() {
